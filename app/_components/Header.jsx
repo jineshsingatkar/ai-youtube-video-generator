@@ -15,7 +15,9 @@ export function Header() {
         <h2 className='text-2xl font-bold'>AI Video Gen</h2>
       </div>
       <div>
-        <Button>Get Started</Button>
+      <Authentication>
+          <Button>Get Started </Button>
+      </Authentication>
       </div>
     </div>
   )

@@ -11,7 +11,7 @@ export function Hero() {
         <div className='mt-7' gap-8 flex>
 
         <button size="lg" variant="secondary">Explore</button>
-        <button size="lg">Get Started</button>
+        <Authentication><button size="lg">Get Started</button></Authentication>
         </div>
         </div>
 
