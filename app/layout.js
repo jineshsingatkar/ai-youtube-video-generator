@@ -11,18 +11,15 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={outfit.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        > <Provider>
+        >
           {children}
-        </Provider>
-          {children}
-        </Provider>
         </ThemeProvider>
       </body>
     </html>
